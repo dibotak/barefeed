@@ -1,7 +1,7 @@
 ---
 title: "The Art of Stopping"
 description: "Why learning to pause is the most underrated productivity skill."
-date: "2026-06-30"
+date: "2026-06-30T20:00:00"
 author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["productivity", "mindfulness", "habits", "reflection"]
 draft: false
