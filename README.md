@@ -8,5 +8,6 @@ A minimal blog built with Nuxt SSG and deployed to Cloudflare Pages.
 - The Key of Consistency
 - The Art of Stopping
 
-Built by [DiBotak](https://adibfaqih.id).
+Built by [DiBotan](https://adibfaqih.id).
 
+Auto-deployed via Cloudflare Pages.
