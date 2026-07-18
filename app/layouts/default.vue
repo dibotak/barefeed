@@ -2,7 +2,7 @@
   <div class="paper-layout">
     <header class="site-header">
       <div class="container">
-        <NuxtLink to="/" class="site-title">Paper</NuxtLink>
+        <NuxtLink to="/" class="site-title">Barefeed</NuxtLink>
         <nav class="site-nav">
           <NuxtLink to="/">Journal</NuxtLink>
           <NuxtLink to="/about">About</NuxtLink>
@@ -16,7 +16,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>Written with ink &mdash; Built with Nuxt</p>
+        <p>Built with Nuxt &mdash; Served raw</p>
       </div>
     </footer>
   </div>
@@ -214,6 +214,106 @@ body {
   height: auto;
   border-radius: 4px;
   margin: 1.5rem 0;
+}
+
+/* ===== TABLES ===== */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-family: var(--paper-sans);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  background: #fff;
+  border: 1px solid var(--paper-border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.prose thead {
+  background: #f0ece4;
+  border-bottom: 2px solid var(--paper-border);
+}
+
+.prose th {
+  padding: 0.875rem 1rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--paper-ink);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.prose td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0ece4;
+  color: var(--paper-ink);
+  vertical-align: top;
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prose tbody tr:nth-child(even) {
+  background: #faf8f4;
+}
+
+.prose tbody tr:hover {
+  background: #f5f1ea;
+  transition: background 0.15s ease;
+}
+
+/* Right-align numeric columns when they contain numbers */
+.prose td:nth-child(2):not(:has(a)),
+.prose td:nth-child(3):not(:has(a)),
+.prose td:nth-child(4):not(:has(a)) {
+  text-align: right;
+}
+
+.prose th:nth-child(2),
+.prose th:nth-child(3),
+.prose th:nth-child(4) {
+  text-align: right;
+}
+
+/* Code inside tables */
+.prose td code {
+  font-size: 0.8em;
+  padding: 0.1rem 0.3rem;
+}
+
+/* Responsive table wrapper */
+.prose .table-wrapper,
+.prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@supports not selector(:has(*)) {
+  /* Fallback for browsers without :has() support */
+  .prose td {
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .prose table {
+    font-size: 0.875rem;
+  }
+
+  .prose th,
+  .prose td {
+    padding: 0.625rem 0.75rem;
+  }
+
+  .prose th {
+    font-size: 0.75rem;
+  }
 }
 
 /* Article meta */
