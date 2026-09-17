@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
-const path = '/posts/' + route.params.slug.join('/')
+// Cloudflare may serve the trailing-slash URL; Content paths/payload keys omit it.
+const path = route.path.replace(/\/+$/, '') || '/'
 
 const { data: article } = await useAsyncData('article-' + path, () =>
   queryCollection('articles').path(path).first()

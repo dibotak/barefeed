@@ -1,8 +1,11 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const { data: page } = await useAsyncData('page-' + route.path, () => {
-  return queryCollection('content').path(route.path).first()
+// Match the same content path and payload key on the server and client.
+const path = route.path.replace(/\/+$/, '') || '/'
+
+const { data: page } = await useAsyncData('page-' + path, () => {
+  return queryCollection('content').path(path).first()
 })
 
 if (!page.value) {
