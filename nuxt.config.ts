@@ -64,9 +64,11 @@ export default defineNuxtConfig({
     },
   },
 
-  content: {
-    preview: {
-      api: 'https://api.nuxt.studio',
-    },
-  },
+  // NOTE: the starter shipped `content.preview.api = 'https://api.nuxt.studio'`
+  // (Nuxt Studio live preview). It is removed deliberately:
+  //   - Nuxt Studio is a paid service and this publication does not use it.
+  //   - It resolves the git remote at build time, so a build from a shallow or
+  //     non-URL clone fails hard with "URL parsing failed" (git-url-parse).
+  //     Removing it makes the build depend on nothing but the local files.
+  content: {},
 })
