@@ -64,24 +64,21 @@ body {
   max-width: 68ch;
 }
 
+/* Now that `.wrap` owns the page gutter and the 62rem outer measure, `.container`
+   only has to constrain the *reading* column. Its padding was left over from
+   before `.wrap` existed, and having both produced a double gutter: content
+   measured 44px from the viewport edge while the header logo measured 20px.
+   Padding removed; the measure and centring stay. */
 .container {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0 1.5rem;
 }
 
-/* Header */
-.site-header {
-  border-bottom: 1px solid var(--paper-border);
-  padding: 1.5rem 0;
-  background: linear-gradient(to bottom, #fff 0%, var(--paper-bg) 100%);
-}
-
-.site-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/* Header — NOTE: the starter shipped `.site-header` / `.site-title` rules here,
+   but the publication layout styles `.site-header`, `.header-inner`, and
+   `.brand-name` in its own scoped block (app/layouts/default.vue). These were
+   unreferenced by any markup and duplicated the real header's job, so they are
+   gone rather than silently overriding it. See that file for header styles. */
 
 .site-title {
   font-family: var(--paper-serif);

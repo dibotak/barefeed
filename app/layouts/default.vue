@@ -26,7 +26,11 @@
           <NuxtLink to="/" class="nav-link">Articles</NuxtLink>
           <NuxtLink to="/about" class="nav-link">About</NuxtLink>
           <NuxtLink to="/editorial" class="nav-link">Editorial</NuxtLink>
-          <a href="/feed.xml" class="nav-link nav-rss">
+          <a
+            href="/feed.xml"
+            class="nav-link nav-rss"
+            data-footer-only="true"
+          >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M6.18 20.82a3.18 3.18 0 1 1-6.36 0 3.18 3.18 0 0 1 6.36 0zM0 9.9v4.1C6.05 14.1 9.9 18 10 24h4.1C14.1 13.95 10.05 9.9 0 9.9zM0 .55v4.05C10.6 4.7 19.3 13.4 19.3 24h4.05C23.35 10.4 13.6.55 0 .55z" transform="translate(0 -0.55) scale(0.9)" />
             </svg>
@@ -92,6 +96,30 @@
 .skip-link:focus {
   left: 0.5rem;
   top: 0.5rem;
+}
+
+/* ---------- wrap ----------
+   The layout is built on `.wrap`, but no rule for it ever existed. Every element
+   using it measured left=0 at every breakpoint — the header logo sat flush against
+   the viewport edge while the article body was inset by its own 24px, so the
+   header and the content were on two different left edges. This rule is the shared
+   gutter and measure for the header, main, and footer. */
+.wrap {
+  width: 100%;
+  max-width: 62rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  /* Tighter gutter on phones: 24px each side leaves only 272px of measure at
+     320px, which starts wrapping body text into very short lines. */
+  .wrap {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 /* ---------- header ---------- */
@@ -245,6 +273,13 @@
   }
   .brand-name {
     font-size: 1.6rem;
+  }
+  /* Only three links fit a phone without wrapping; RSS is dropped from the
+     header rather than pushed to a second row. The footer nav keeps it, so the
+     link is never lost — and the <link rel="alternate"> in the head still lets
+     browsers and readers auto-discover the feed. */
+  .nav-rss {
+    display: none;
   }
   .site-nav {
     gap: 1.1rem;
