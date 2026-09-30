@@ -10,8 +10,17 @@
     <header class="site-header">
       <div class="wrap header-inner">
         <NuxtLink to="/" class="brand">
-          <span class="brand-name">Barefeed</span>
-          <span class="brand-tag">Research syntheses</span>
+          <img
+            src="/brand/barefeed-b-web.svg"
+            alt=""
+            width="32"
+            height="34"
+            class="brand-mark"
+          />
+          <span class="brand-text">
+            <span class="brand-name">Barefeed</span>
+            <span class="brand-tag">Research syntheses</span>
+          </span>
         </NuxtLink>
         <nav class="site-nav" aria-label="Main">
           <NuxtLink to="/" class="nav-link">Articles</NuxtLink>
@@ -102,6 +111,19 @@
 .brand {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+/* The mark is decorative next to the wordmark, so it is aria-hidden via an empty
+   alt. The link text already names the publication. */
+.brand-mark {
+  display: block;
+  width: 32px;
+  height: 34px;
+  flex: none;
+}
+.brand-text {
   display: flex;
   align-items: baseline;
   gap: 0.85rem;

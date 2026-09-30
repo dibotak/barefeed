@@ -15,7 +15,13 @@
   --paper-ink: #1a1a1a;
   --paper-muted: #6b6b6b;
   --paper-border: #e2ddd3;
-  --paper-accent: #8b4513;
+  --paper-accent: #B4401C;
+  /* The brand mark's orange is #D9542B (3.87:1 on the paper background). That
+     clears the 3:1 bar for large text and UI shapes, but link text sits at
+     16-17px where WCAG AA requires 4.5:1. So small text uses this darkened
+     sibling at 5.51:1, and --paper-accent-bright keeps the exact brand hue for
+     large type, rules, and the logo mark itself. */
+  --paper-accent-bright: #D9542B;
   /* Footer wash. --paper-muted is a text colour and too dark to tint a
      surface; this is a real tint, not an opacity hack. */
   --paper-muted-faint: #f6f2ec;

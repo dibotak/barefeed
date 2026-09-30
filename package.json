@@ -9,7 +9,8 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "og": "node scripts/generate-og.mjs",
+    "icons": "node scripts/generate-icons.mjs",
+    "og": "npm run icons && node scripts/generate-og.mjs",
     "preview": "nuxt preview",
     "deploy": "npm run og && nuxt generate"
   },

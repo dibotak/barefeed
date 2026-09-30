@@ -1,13 +1,20 @@
 {
-  "name": "Barefeed",
+  "name": "Barefeed — research syntheses",
   "short_name": "Barefeed",
   "description": "Research syntheses on logistics, finance, and learning.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fdfbf7",
-  "theme_color": "#8b4513",
+  "theme_color": "#D9542B",
   "icons": [
-    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
-    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    {
+      "src": "/brand/barefeed-b-color.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    { "src": "/brand/barefeed-b-mono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
   ]
 }

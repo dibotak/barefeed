@@ -12,19 +12,65 @@ A static publication built with Nuxt 4 + Nuxt Content. Articles are markdown fil
 Content is written with AI assistance and reviewed by a human editor. That disclosure
 appears in the footer, at the foot of every article, and in the page metadata.
 
+## Brand
+
+The identity is the lowercase **b** mark: an ink stem, an orange bowl, and a grey
+baseline bar. Source assets live in `public/brand/`:
+
+| file | use |
+| --- | --- |
+| `barefeed-b-color.svg` | primary mark, OG cards, SVG favicon |
+| `barefeed-b-web.svg` | header `<img>` — same art, **trimmed viewBox** (see below) |
+| `barefeed-b-mono.svg` | single-colour, for `maskable` manifest icons |
+| `barefeed-b-container.svg` | framed lockup, used for `apple-touch-icon` |
+
+Regenerate every derived icon with `npm run icons`
+(`scripts/generate-icons.mjs`): `favicon.ico` (6 frames, 16→256), `favicon-32.png`,
+`apple-touch-icon.png` (180×180), and `barefeed-b-web.svg`.
+
+### The artboard trap
+
+The authored SVGs are 512×512 but the mark only fills **284×300** of that — 55%×59%.
+Anything that scales the *artboard* rather than the *ink* draws the mark at 55% of
+the size you asked for. An `<img width="34">` rendered a 19px logo.
+
+So `trimToInk()` in `generate-icons.mjs` measures the path coordinates and writes
+a `viewBox` tight to the real bounds. The geometry is untouched; only the viewing
+window moves. Measured after the fix: 32px favicon went from 12.5% → 36% ink.
+
+**Do not also wrap trimmed content in a `scale()` group.** The viewBox is in the
+path's own coordinate space, so the two compound — the bowl lands past x=512, gets
+clipped, and the orange silently disappears while the icon still "works". This cost
+a debug cycle in `generate-og.mjs` too, which is why both scripts carry the note.
+
+### Colour
+
+| token | value | contrast on paper |
+| --- | --- | --- |
+| `--paper-accent` | `#B4401C` | 5.51:1 — small text, links |
+| `--paper-accent-bright` | `#D9542B` | 3.87:1 — large text, rules, the mark |
+| `--paper-ink` | `#1A1A1A` | 17.5:1 |
+
+The brand orange is `#D9542B`. It clears the 3:1 bar for large type and non-text
+shapes but **fails AA at 4.5:1 for the 16–17px link text** the site uses. So exact
+brand orange is kept for the mark and large elements, and small text uses a
+darkened sibling at the same hue. Do not "fix" this by replacing
+`--paper-accent` with the brand orange — that is a measured regression.
+
 ## Commands
 
 ```bash
 npm run dev       # dev server
-npm run og        # regenerate public/og/*.png from content frontmatter
+npm run icons     # regenerate favicon.ico / apple-touch-icon / web SVG
+npm run og        # icons + regenerate public/og/*.png from content frontmatter
 npm run generate  # prerender to .output/public
 npm run deploy    # og + generate  <-- what Cloudflare Pages runs
 ```
 
-`npm run deploy` runs OG generation *first* on purpose. The pages reference
-`/og/<slug>.png`; if the images are stale or missing the build still succeeds and the
-breakage only shows up when someone shares a link. Generating first makes the build
-fail loudly instead.
+`npm run deploy` runs icon + OG generation *first* on purpose. The pages reference
+`/og/<slug>.png` and `/favicon.ico`; if those are stale or missing the build still
+succeeds and the breakage only shows up when someone shares a link. Generating
+first makes the build fail loudly instead.
 
 ## Domain and the pages.dev redirect
 
@@ -74,8 +120,12 @@ server/routes/
   sitemap.xml.ts
 scripts/
   generate-og.mjs       OG images via sharp
+  generate-icons.mjs    favicon.ico / touch icon / trimmed web SVG
 public/
+  brand/*.svg           the b mark, source assets
   og/*.png              generated
+  favicon.ico
+  apple-touch-icon.png
   robots.txt
   site.webmanifest
 ```

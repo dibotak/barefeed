@@ -37,7 +37,9 @@ export default defineNuxtConfig({
           content:
             'Barefeed publishes research syntheses on logistics, finance, and learning — grounded in academic research, industry data, and primary sources, never in hot takes.',
         },
-        { name: 'theme-color', content: '#8b4513' },
+        // Brand mark orange. The darkened sibling is for small text only; a UI
+        // theme colour is a surface, not body copy, so 3:1 is the right bar.
+        { name: 'theme-color', content: '#D9542B' },
         { name: 'author', content: 'Barefeed' },
         // Content is AI-assisted; this is a standing disclosure so it surfaces
         // in search results and wherever the site gets embedded.
@@ -50,8 +52,12 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap',
         },
-        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-        { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
+        // The multi-size .ico is the workhorse: browsers pick the frame they
+        // need. The SVG follows for modern clients that prefer vector.
+        { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+        { rel: 'icon', href: '/favicon.ico', sizes: '16x16' },
+        { rel: 'icon', href: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+        { rel: 'icon', href: '/brand/barefeed-b-color.svg', type: 'image/svg+xml' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
         { rel: 'manifest', href: '/site.webmanifest' },
         {
