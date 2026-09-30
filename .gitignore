@@ -7,6 +7,13 @@ dist
 .env
 .DS_Store
 
-# Generated at build time by scripts/generate-og.mjs (`npm run og`).
-# Committing 15 PNGs would bloat the repo and let them drift from content.
-public/og/
+# NOTE: public/og/ is deliberately COMMITTED, not generated at build time.
+#
+# It was originally gitignored on the assumption that Cloudflare Pages would run
+# `npm run deploy` (= og + generate). It runs the default `npm run generate`,
+# which skips scripts/generate-og.mjs, so every og:image 404'd in production
+# while the local build was fine. Changing the Pages build command needs
+# dashboard access we do not have, so the images are versioned instead.
+#
+# Regenerate with `npm run og` and commit the result whenever an article is
+# added, removed, or retitled. CI does not do this for us.
