@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# barefeed.pages.dev is a Cloudflare Pages fallback hostname. The real origin is
+# barefeed.dibotak.com; the canonical tag consolidates signals, and the client
+# redirect in app/plugins/canonical-redirect.ts sends human visitors across.
+# Uncomment once the pages.dev subdomain is disabled in the Cloudflare dashboard
+# — that is a true 301, this is not.
+# Disallow: /
+
+Sitemap: https://barefeed.dibotak.com/sitemap.xml

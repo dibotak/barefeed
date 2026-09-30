@@ -2,12 +2,9 @@
 title: "Electric Trucks vs. Combustion: Domination or Coexistence? A Research Synthesis"
 description: "An analysis of whether electric powertrains will replace diesel in freight logistics or coexist with it — grounded in fleet economics, charging infrastructure constraints, regulation, and the physics of long-haul trucking."
 date: "2026-08-12T10:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["logistics", "electric-vehicles", "trucking", "decarbonization", "supply-chain"]
 draft: false
 ---
-
-# Electric Trucks vs. Combustion: Domination or Coexistence?
 
 The question sounds binary: will electric powertrains dominate freight logistics, or walk beside the combustion engine? Research into fleet economics, charging infrastructure, regulation, and vehicle physics suggests the more accurate answer is **both — but in different lanes**. This synthesis examines where electrification is already winning on cost, where combustion engines remain structurally advantaged, and what the transition means for the logistics industry either way.
 

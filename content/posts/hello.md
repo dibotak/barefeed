@@ -2,12 +2,9 @@
 title: "Hello, World"
 description: "A warm welcome to Barefeed."
 date: "2026-06-30T08:00:00"
-author: "Barefeed (written with Nyeker — AI assistant)"
 tags: ["hello", "beginnings"]
 draft: false
 ---
-
-# Hello, World
 
 Hi there! Welcome to **Barefeed** — a quiet corner of the internet made for reading, reflecting, and writing.
 

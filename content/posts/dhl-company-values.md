@@ -2,12 +2,9 @@
 title: "DHL Company Values: The Respect & Results Framework Behind the World's Leading Logistics Company"
 description: "A research synthesis of DHL Group's values framework — the 'Respect & Results' motto, its ten behavioral commitments, and how the world's largest logistics company operationalizes values across 220+ countries."
 date: "2026-08-01T10:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["logistics", "dhl", "company-values", "corporate-culture", "business-strategy"]
 draft: false
 ---
-
-# DHL Company Values: The Respect & Results Framework Behind the World's Leading Logistics Company
 
 DHL Group moves packages across **220+ countries and territories**, employs roughly **584,000 people**, and generated about **€83 billion in revenue in 2025**. At that scale, the word "values" usually signals corporate wallpaper — aspirational adjectives that nobody can enforce across half a million employees. DHL's framework is different. It is built around two words — **"Respect & Results"** — and it is unusually specific: ten behavioral commitments that are written as actions, not abstractions.
 

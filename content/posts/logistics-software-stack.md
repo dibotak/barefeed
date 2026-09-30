@@ -2,12 +2,9 @@
 title: "Why Freight Giants Don't Run on Generic ERPs: A Research Synthesis"
 description: "An analysis of logistics software architecture based on NX Group's acquisition strategy, industry platform trends, and the five-layer stack that moves global freight."
 date: "2026-07-05T16:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["logistics", "erp", "supply-chain", "software-architecture", "domain-knowledge"]
 draft: false
 ---
-
-# Why Freight Giants Don't Run on Generic ERPs: A Research Synthesis
 
 Most discussions about enterprise software treat ERPs as all-in-one solutions. The research into how major logistics companies actually operate tells a different story. This article synthesizes findings from NX Group's public acquisition strategy, Gartner's supply chain technology reports, and platform documentation from leading vendors to explain why the world's largest freight operators run on multi-layer architectures — and why a generic ERP module is rarely sufficient.
 

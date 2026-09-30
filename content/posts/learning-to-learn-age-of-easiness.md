@@ -2,12 +2,9 @@
 title: "Learning How to Learn in the Age of Easiness: How to Find the Real Pain in Learning"
 description: "AI removed the friction from learning but not the difficulty. A research-grounded framework for locating the point where understanding actually breaks — retrieval, transfer, and error detection — instead of the point where it merely feels smooth."
 date: "2026-09-27T10:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["learning", "llm", "cognitive-science", "metacognition", "self-explanation", "education"]
 draft: false
 ---
-
-# Learning How to Learn in the Age of Easiness: How to Find the Real Pain in Learning
 
 For most of the history of learning, two things were true simultaneously: getting an answer was hard, and knowing whether you had the right answer was also hard. Difficulty was unavoidable, and it arrived bundled with the diagnostic signal that told you where you stood.
 

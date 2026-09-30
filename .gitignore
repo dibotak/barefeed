@@ -1,1 +1,12 @@
-*.log\nnode_modules\n.nuxt\n.output\ndist
+*.log
+node_modules
+.nuxt
+.output
+dist
+.data
+.env
+.DS_Store
+
+# Generated at build time by scripts/generate-og.mjs (`npm run og`).
+# Committing 15 PNGs would bloat the repo and let them drift from content.
+public/og/

@@ -1,15 +1,17 @@
 {
-  "name": "my-blog",
+  "name": "barefeed",
   "private": true,
   "type": "module",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "nuxt build",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "og": "node scripts/generate-og.mjs",
+    "preview": "nuxt preview",
+    "deploy": "npm run og && nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^3.14.0",
@@ -17,5 +19,8 @@
     "nuxt": "^4.4.8",
     "vue": "^3.5.35",
     "vue-router": "^5.1.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }

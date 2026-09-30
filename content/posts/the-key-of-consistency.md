@@ -2,12 +2,9 @@
 title: "The Key of Consistency"
 description: "Why showing up every day beats being perfect once."
 date: "2026-06-30T14:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["productivity", "mindset", "habits"]
 draft: false
 ---
-
-# The Key of Consistency
 
 We live in a world obsessed with breakthroughs. Viral moments. Overnight success. The single post that changes everything. But if you look closely at anyone who has built something meaningful — a body of work, a career, a craft — you will find something far less glamorous behind it: **consistency**.
 

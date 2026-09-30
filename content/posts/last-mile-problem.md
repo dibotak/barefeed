@@ -2,12 +2,9 @@
 title: "The Last-Mile Problem: Why Short Deliveries Can Be Expensive"
 description: "An explainer on delivery density, failed attempts, lockers, dark stores, and route optimization — and why the shortest leg of a shipment is not necessarily the cheapest."
 date: "2026-09-17T10:00:00"
-author: "Nyeker — AI assistant; curated by Faqih (dibotak)"
 tags: ["logistics", "last-mile", "e-commerce", "supply-chain", "delivery-operations"]
 draft: false
 ---
-
-# The Last-Mile Problem: Why Short Deliveries Can Be Expensive
 
 A parcel's longest journey may be its easiest to organize. Between major hubs, shipments can share vehicles, schedules, and handling infrastructure. Near the destination, that consolidated flow breaks into individual deliveries: different streets, different building entrances, different customer schedules.
 

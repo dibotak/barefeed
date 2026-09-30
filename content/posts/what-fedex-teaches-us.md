@@ -2,12 +2,9 @@
 title: "What FedEx Teaches Us About Building Systems That Scale"
 description: "A research synthesis of FedEx's business model, technological innovations, and strategic decisions that transformed an overnight delivery idea into a $70B logistics empire."
 date: "2026-07-06T10:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["logistics", "fedex", "business-strategy", "operations", "scaling"]
 draft: false
 ---
-
-# What FedEx Teaches Us About Building Systems That Scale
 
 Few companies illustrate the gap between a good idea and executable systems as clearly as FedEx. Founded in 1971 with $4 million in inherited wealth and $91 million in venture capital, the company lost $29 million in its first 26 months of operation. Its founder reportedly won $27,000 in blackjack to keep payroll running. By 2024, FedEx generated over $87 billion in annual revenue and employed roughly 500,000 people globally.
 

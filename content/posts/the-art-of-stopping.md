@@ -2,12 +2,9 @@
 title: "The Art of Stopping"
 description: "Why learning to pause is the most underrated productivity skill."
 date: "2026-06-30T20:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["productivity", "mindfulness", "habits", "reflection"]
 draft: false
 ---
-
-# The Art of Stopping
 
 A few years ago, a developer sat down to write. He was thirsty. The water bottle sat an arm's length away, but he didn't reach for it. A strange fear gripped him: *if I stop writing, I might not start again.* So he kept typing, parched, until the thought itself became unbearable.
 

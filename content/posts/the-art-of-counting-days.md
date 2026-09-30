@@ -2,12 +2,9 @@
 title: "The Art of Counting Days"
 description: "Why humans mark time, from prison walls to habit streaks, and what the research reveals about counting as a psychological tool."
 date: "2026-07-06T14:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["psychology", "time", "habits", "grief", "endurance"]
 draft: false
 ---
-
-# The Art of Counting Days
 
 Time, in its raw form, is invisible. Humans cannot see it, touch it, or store it. Yet every culture, every individual, finds ways to make it tangible. The most universal method is deceptively simple: **counting days**.
 

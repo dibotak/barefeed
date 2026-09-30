@@ -12,9 +12,12 @@ if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-useHead({
-  title: page.value?.title ? `${page.value.title} \u2014 Paper` : 'Paper',
-})
+useBarefeedSeo(
+  computed(() => ({
+    title: page.value?.title || 'Barefeed',
+    description: page.value?.description || '',
+  })),
+)
 </script>
 
 <template>

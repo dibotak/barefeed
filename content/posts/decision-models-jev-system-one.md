@@ -2,12 +2,9 @@
 title: "Decision Models: What the 'System One' Category Actually Is, and What Its Own Numbers Show"
 description: "Jev, Solar Decide and Span-01 promise typed decisions instead of generated text. An evidence-grounded look at the interface, the vendor field, the benchmark claims — including multipliers that do not reconcile with the figures printed beside them — and where the category genuinely fits."
 date: "2026-09-30T10:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["ai", "llm", "machine-learning", "software-architecture", "evaluation", "agents"]
 draft: false
 ---
-
-# Decision Models: What the "System One" Category Actually Is, and What Its Own Numbers Show
 
 Between 15 and 28 September 2026, at least eight vendors shipped or listed a model that does not write text. They take application state and a set of questions, and return a typed value with a probability attached. TypeSafe called the category "System One" and named the first one Jev. Upstage shipped Solar Decide on a mixture-of-experts base. Respan listed Span-01 at a fifth of the price. Together with open-weight efforts, the interface is now served through OpenRouter's separate alpha Decisions endpoint under one schema.
 

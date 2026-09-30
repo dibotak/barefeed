@@ -2,12 +2,9 @@
 title: "The Three Pillars of ERP: What Actually Makes It Work"
 description: "A deep dive into Financial Management, Master Data Management, and Workflow Automation — the invisible machinery that powers every serious business system."
 date: "2026-07-05T12:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["erp", "business", "finance", "workflow", "data"]
 draft: false
 ---
-
-# The Three Pillars of ERP: What Actually Makes It Work
 
 Most people think an ERP is just a big database with forms. You enter a sale, it saves a record. You create a purchase order, someone approves it. Simple, right?
 

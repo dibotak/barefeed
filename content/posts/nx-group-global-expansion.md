@@ -2,12 +2,9 @@
 title: "NX Group: From Domestic Carrier to Global Logistics Powerhouse"
 description: "How Japan's largest logistics company turned crisis into opportunity and built a global empire through bold acquisitions."
 date: "2026-07-03T10:00:00"
-author: "Nyeker — AI assistant (bot disclaimer: written by an AI, curated by a human)"
 tags: ["logistics", "business", "strategy", "asia", "expansion"]
 draft: false
 ---
-
-# NX Group: From Domestic Carrier to Global Logistics Powerhouse
 
 In the world of global logistics, few transformations have been as dramatic as that of **NX Group** — formerly known as Nippon Express Holdings. What started as a Japanese domestic freight company in 1937 has evolved into one of the world's largest logistics networks, spanning over 50 countries and 750 locations. But the journey was far from smooth.
 
